@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(10, 4, 92, 0.8);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(13, 7, 93);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 3px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 216);
+            font-size: 1.15rem;
+
+        }
+
+        /*nav ul li a:active{
+           transform: scale(1.2);
+           
+        }*/
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 23px 0;
+            height: 100vh;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+
+        }
+
+        .leftSection {
+            margin: 70px 0px;
+            font-size: 3rem;
+        }
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(11, 2, 11);
+            color: antiquewhite;
+            border: 2px solid white;
+            border: none;
+            border-radius: 10px;
+        }
+        .leftSection .buttons{
+            padding: 23px;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px;
+        }
+
+        .purple {
+            color: rgb(235, 9, 224);
+        }
+
+        .textGray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(235, 9, 224);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            height: 2px;
+            background: #081244;
+            border: 0;
+            margin: 10px 84px 3px 84px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0px;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 100px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 25px;
+            width: 150px;
+            font-size: 1.1rem;
+            color: rgb(24, 1, 22);
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 45px;
+            color: rgb(241, 209, 167);
+            width: 150px;
+            font-size: 16px;
+        }
+
+        .image-top {
+            width: 60px;
+            position: relative;
+            top: -60px;
+            left: -25px;
+        }
+        footer{
+            background-color: rgb(46, 39, 62);
+        }
+        .flex{
+            display: flex;
+            
+            padding: 23px 122px;
+            justify-content: space-evenly;
+            align-items: center;
+            row-gap: 20px;
+        }
+        footer ul{
+            list-style: none;
+        }
+        .footer-rights{
+            color: grey;
+            text-align: center;
+            padding: 12px 0px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Archit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Archit</span>,
+                And I am a
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="img/imgwithbg.png" alt="devimg">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="textGray">What have I done so far</span>
+            <h1>Educational Background</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="img/studentwithbg.png" alt="">
+                    <div class="vertical-title">SSC(2021-2022)</div>
+                    <div class="vertical-desc">Kendriya Vidyalaya IIT Bombay</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="img/studentwithbg.png" alt="">
+                    <div class="vertical-title">HSC(2023-2024)</div>
+                    <div class="vertical-desc">Pace Junior Science College</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/studentwithbg.png" alt="">
+                    <div class="vertical-title">BTECH(2024-2028)</div>
+                    <div class="vertical-desc">Dwarkadas J. Sanghvi College of Engineering</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/developerwithbg.png" alt="">
+                    <div class="vertical-title">PROGRAMMING(2024-2025)</div>
+                    <div class="vertical-desc">C Language</div>
+                    <div class="vertical-desc">Basics of JAVA</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/developerwithbg.png" alt="">
+                    <div class="vertical-title">WEB DEVELOPMENT(2025) </div>
+                    <div class="vertical-desc">Aspiring Web Developer</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+                <h3>Archit's Educational Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169www.architsportfolio.com|All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' Student', ' Web Developer ', 'Sports Enthusiast'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
